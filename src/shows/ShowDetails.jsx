@@ -6,7 +6,7 @@ import EpisodeDetails from "../episodes/EpisodeDetails";
 export default function ShowDetails({ show }) {
   const [selectedEpisode, setSelectedEpisode] = useState();
   if (!show) {
-    <p>Please select a Show</p>;
+    return <h3>Please select a Show</h3>;
   } else {
     return (
       <div className="show-details">
